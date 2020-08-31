@@ -41,4 +41,42 @@ header .logo_text{
     display: flex ;
     flex-direction: column;
     justify-content: center;
+    list-style-type: none;
+}
+
+#wrap header nav ul li{
+    margin-top:0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left:30px;
+    padding-left : 15px;
+    position: relative;
+}
+
+#wrap header nav ul li a{
+    font-size :16px;
+    color: black;
+    font-weight: 600;
+    line-height: 30px;
+    
+}
+
+#wrap header nav ul li::after{
+    content: "";
+    display: block;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background : black;
+    left: 0px;
+    top: 13px;  
+}
+
+#wrap header nav ul li:hover a, #wrap header nav ul li.on a{
+    color : #ed3140;
+}
+
+
+#wrap header nav ul li:hover:after , #wrap header nav ul li.on:after{
+    background : #ed3140;
 }
