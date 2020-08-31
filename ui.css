@@ -25,11 +25,6 @@ header .logo_text{
     top: 0px;
 }
 
-#container{
-    width: 100%;
-    height: 100%;
-}
-
 #wrap header nav{
     width: 100%;
     height: 100%;
@@ -45,11 +40,12 @@ header .logo_text{
 }
 
 #wrap header nav ul li{
-    margin-top:0px;
+    cursor: pointer;
+    margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 10px;
-    margin-left:30px;
-    padding-left : 15px;
+    margin-left: 30px;
+    padding-left: 15px;
     position: relative;
 }
 
@@ -68,15 +64,89 @@ header .logo_text{
     width: 5px;
     height: 5px;
     background : black;
-    left: 0px;
+    left: 5px;
     top: 13px;  
+    position: absolute;
 }
 
 #wrap header nav ul li:hover a, #wrap header nav ul li.on a{
     color : #ed3140;
+
 }
 
 
 #wrap header nav ul li:hover:after , #wrap header nav ul li.on:after{
     background : #ed3140;
+}
+
+
+footer{
+    width : 150px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    padding : 0px 20px 30px 20px;
+    font-size : 11px;
+    z-index: 12;
+}
+
+footer address{
+    padding : 0px 0px 15px 0px;
+    clear: both;
+}
+
+footer > a {
+    display:inline-block;
+    width: 15px;
+    height: 16px;
+    float : right; 
+}
+
+footer>a.facebook{
+    background:url(./image/facebook.png)
+    no-repeat;
+    background-size: contain;
+    margin: 0 0 0 auto;
+}
+
+
+footer>a.twitter{
+    background:url(./image/twitter.png)
+    no-repeat;
+    background-size: contain;
+}
+
+footer>a.instargram{
+    background:url(./image/instargram.jpg)
+    no-repeat;
+    background-size: contain;
+}
+#container{
+    width: 100%;
+    height: 100%;
+    
+}
+
+#container .office{
+
+    background : #ed3140;
+    display: inline-block;
+}
+
+#container .book{
+
+    background : #eeeeee;
+    display: inline-block;
+    margin-left: -5px;
+}
+#container .faq{
+ 
+    background : #cccccc;
+    display: inline-block;
+    margin-left: -5px;
+}
+#container .contact{
+
+    background : #dddddd;
+    display: inline-block;
 }
